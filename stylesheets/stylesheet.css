@@ -9,8 +9,6 @@ body {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
-/* General & 'Reset' Stuff */
-
 .container {
   width: 90%;
   max-width: 600px;
@@ -254,3 +252,36 @@ p {
 .cf {
   zoom:1;
 }
+code {
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+code {
+    background-color: #01DFD7;
+    color: #F8F8F2;
+}
+code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #0101DF;
+    background-color: #FF8000;
+    white-space: nowrap;
+    border-radius: 4px;
+}
+code, kbd, pre, samp {
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+code, kbd, pre, samp {
+    font-family: monospace,monospace;
+    font-size: 1em;
+}
+* {
+    box-sizing: border-box;
+}
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
