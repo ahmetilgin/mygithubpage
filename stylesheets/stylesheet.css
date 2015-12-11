@@ -166,12 +166,18 @@ table {
   width: 100%;
   margin: 0 0 20px 0;
 }
-
+element {
+    background-color: #CCCDCA;
+}
 th {
   text-align: left;
   border-bottom: 1px dashed #b5e853;
   padding: 5px 10px;
+     font-weight: bold;
+    text-align: left;
 }
+
+
 
 td {
   padding: 5px 10px;

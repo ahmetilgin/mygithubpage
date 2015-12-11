@@ -33,7 +33,7 @@
 
     <p ><font size="4" face="Arial" color="#40FF00">
 
-        <b>GNU Emacs Programcılar için birebir bununda sebebi kullanmaya başlarsanız anlayacaksınız elinizi klavyeden hiç çekmeden her şeyi yapabiliyorsunuz mouse'a ihtiyacınız kalmıyor.<br>   </br> 
+        <b>GNU Emacs bir metin editörü ama  metin editörün den beklenmeyen her şeyi yapabiliyorsunuz mesela oyun oynayabiliyorsunuz maillerinizi okuyabiliyorsunuz.Sanırım bu kadar çok konuşulmasının sebebide bunlar.<br>   </br> 
 
 
     
@@ -48,20 +48,320 @@
 
     Sonra GNU Emacs'i çalıştıralım.
 
-    <code>CTRL + X </code> Yaptıktan Sonra <code>CTRL + F </code> yapıp yeni dosya oluşturmak istiyorsak yeni dosyanın ismini mesela ben at.txt yaptım. entere bastıgımızda yeni dosyamız açılmış bir şekilde karşımızda .
+    <code>CTRL + X </code> Yaptıktan Sonra <code>CTRL + F </code> yapıp yeni dosya oluşturmak istiyorsak dosya ismini bir text dosyasını açmak istiyorsak o text dosyasının ismini yazmamız yeterli.
     <br></br>  
-    <a href="emacs/ilkresim.png" rel="lightbox">
- 
+    Ayrıca bu verdiğim bağlantıda aşağıda verdiğim kısayolların örneklerle uygulaması var.<br></br>  
+    <a href="http://www.belgeler.org/uygulamalar/emacs/emacs-tutorial.html">Emacs Türkçe</a> 
 
+    <br></br>  
+  
+<table style="height: 1207px; width: 500px;" align="center" border="0">
+<tbody>
 
-
-
-
-
-
-    </font>
-
-
+<tr>
+<th colspan="3" style="background-color: #FF8000">Dosya/FILE</th>
+</tr><tr>
+<td>Aç<br></td>
+<td>Ctrl-X, Ctrl-F</td>
+<td></td>
+</tr>
+<tr>
+<td>Kaydet <br></td>
+<td>Ctrl-X, Ctrl-S</td>
+<td></td>
+</tr>
+<tr>
+<td>Farklı Kaydet <br></td>
+<td>Ctrl-X, Ctrl-W</td>
+<td></td>
+</tr>
+<tr>
+<td>Tümünü Kaydet<br></td>
+<td>Ctrl-X, S</td>
+<td></td>
+</tr>
+<tr>
+<td>Dosyaya Geri Dön</td>
+<td>Ctrl-X, Ctrl-V</td>
+<td></td>
+</tr>
+<tr>
+<td>Tampona(buffer) Geri Dön</td>
+<td>Alt-X, revert-buffer</td>
+<td></td>
+</tr>
+<tr>
+<td>Penceryi/tamponu Kapat<br></td>
+<td>Ctrl-X, K</td>
+<td></td>
+</tr>
+<tr>
+<td>Çıkış</td>
+<td>Ctrl-X, Ctrl-C</td>
+<td></td>
+</tr>
+<tr>
+<th colspan="3" style="background-color: #FF8000">Düzenle/EDIT</th>
+</tr>
+<tr>
+<td>Geri Al<br></td>
+<td>Ctrl-_</td>
+<td></td>
+</tr>
+<tr>
+<td>Seçimi Başlat<br></td>
+<td>Ctrl-SPC</td>
+<td></td>
+</tr>
+<tr>
+<td>Seçimi İptal Et<br></td>
+<td>Ctrl-G</td>
+<td></td>
+</tr>
+<tr>
+<td>Seçimi Kaydet<br></td>
+<td>Ctrl-W</td>
+<td></td>
+</tr>
+<tr>
+<td>Satırı Kes<br></td>
+<td>Ctrl-K</td>
+<td></td>
+</tr>
+<tr>
+<td>Yapıştır (yank/paste)<br></td>
+<td>Ctrl-Y</td>
+<td></td>
+</tr>
+<tr>
+<td>Seçimi # numaralı clipboarda koplaya<br></td>
+<td>Ctrl-X R S <em>[#]</em></td>
+<td></td>
+</tr>
+<tr>
+<td># numaralı clipborad'dan yapıştır<br></td>
+<td>Ctrl-X R I <em>[#]</em></td>
+<td></td>
+</tr>
+<tr>
+<td>Sıl</td>
+<td>DEL</td>
+<td></td>
+</tr>
+<tr>
+<td>One Doğru Sil<br></td>
+<td>Ctrl-D</td>
+<td></td>
+</tr>
+<tr>
+<td>Kelimeyi Sil</td>
+<td>Alt-DEL</td>
+<td></td>
+</tr>
+<tr>
+<td>Öne Doğru KelimeSil</td>
+<td>Alt-D</td>
+<td></td>
+</tr>
+<tr>
+<td>Satır Sil<br></td>
+<td>Ctrl-K</td>
+<td></td>
+</tr>
+<tr>
+<th colspan="3" style="background-color: #FF8000">İşaretçi Hareketi<br></th>
+</tr>
+<tr>
+<td></td>
+<td>ileri (forward)</td>
+<td>geri(backward)</td>
+</tr>
+<tr>
+<td>Kelime</td>
+<td>Alt-F</td>
+<td>Alt-B</td>
+</tr>
+<tr>
+<td>Satır</td>
+<td>Ctrl-A</td>
+<td>Ctrl-E</td>
+</tr>
+<tr>
+<td>Paragraf</td>
+<td>Alt-{</td>
+<td>Alt-}</td>
+</tr>
+<tr>
+<td>Sayfa</td>
+<td>Ctrl-V</td>
+<td>Alt-V</td>
+</tr>
+<tr>
+<td>Belge</td>
+<td>Alt-&lt;</td>
+<td>Alt-&gt;</td>
+</tr>
+<tr>
+<td>C Function</td>
+<td>Alt-Ctrl-A</td>
+<td>Alt-Control-E</td>
+</tr>
+<tr>
+<th colspan="3" style="background-color: #FF8000">Arama<br></th>
+</tr>
+<tr>
+<td>Artışlı arama<br></td>
+<td>Ctrl-S</td>
+<td></td>
+</tr>
+<tr>
+<td>Artışlı tersine arama<br></td>
+<td>Ctrl-R</td>
+<td></td>
+</tr>
+<tr>
+<td>Kurallı İfade artışlı arama</td>
+<td>Alt-Ctrl-S</td>
+<td></td>
+</tr>
+<tr>
+<td>Kurallı İfade ters artışlı arama<br></td>
+<td>Alt-Ctrl-R</td>
+<td></td>
+</tr>
+<tr>
+<td>Etkileşimli bul/değiştir<br></td>
+<td>Alt-%</td>
+<td></td>
+</tr>
+<tr>
+<td>Numaraları satıra git<br></td>
+<td>Alt-X goto-line</td>
+<td></td>
+</tr>
+<tr>
+<th colspan="3" style="background-color: #FF8000">Pencere</th>
+</tr>
+<tr>
+<td>Kapat</td>
+<td>Ctrl-X, K</td>
+<td></td>
+</tr>
+<tr>
+<td>Bır sonraki pencere<br></td>
+<td>Ctrl-X, B</td>
+<td></td>
+</tr>
+<tr>
+<td>Pencere seç<br></td>
+<td>Ctrl-X, Ctrl-B</td>
+<td></td>
+</tr>
+<tr>
+<td>Genişlet</td>
+<td>Ctrl-X, 1</td>
+<td></td>
+</tr>
+<tr>
+<td>Yatay Böl<br></td>
+<td>Ctrl-X, 2</td>
+<td></td>
+</tr>
+<tr>
+<td>Dikey Böl<br></td>
+<td>Ctrl-X, 3</td>
+<td></td>
+</tr>
+<tr>
+<td>Pencerler arasinda odak değiştir</td>
+<td>Ctrl-X, O</td>
+<td></td>
+</tr>
+<tr>
+<td>Menüyü etkinleştir<br></td>
+<td>Alt-` yada F10<br></td>
+<td></td>
+</tr>
+<tr>
+<th colspan="3" style="background-color: #FF8000">Yazmaçlar/REGISTERS</th>
+</tr>
+<tr>
+<td>Seçimi # Numaralı Panoya Kopyala<br></td>
+<td>Ctrl-X R S <em>[#]</em></td>
+<td></td>
+</tr>
+<tr>
+<td># Numaralı Panodan Yapıstır<br></td>
+<td>Ctrl-X R I <em>[#]</em></td>
+<td></td>
+</tr>
+<tr>
+<td>#Numaralı yerimi olarak işaretle<br></td>
+<td>Ctrl-X R SPC <em>[#]</em></td>
+<td></td>
+</tr>
+<tr>
+<td>#Numaralı yerimine atla<br></td>
+<td>Ctrl-X R J <em>[#]</em></td>
+<td></td>
+</tr>
+<tr>
+<th colspan="3" style="background-color: #FF8000">Formatlama</th>
+</tr>
+<tr>
+<td>Re-flow Paragraph</td>
+<td>Alt-Q</td>
+<td></td>
+</tr>
+<tr>
+<td>Seçimi Girintile<br></td>
+<td>Alt-Control-\</td>
+<td></td>
+</tr>
+<tr>
+<td>Kelimeyi Büyük Harfe Çevir<br></td>
+<td>Alt-U</td>
+<td></td>
+</tr>
+<tr>
+<td>Kelimeyi Küçük Harfe Çevir<br></td>
+<td>Alt-L</td>
+<td></td>
+</tr>
+<tr>
+<td>Kelimenin Başharfini Büyüt<br></td>
+<td>Alt-C</td>
+<td></td>
+</tr>
+<tr>
+<td>Seçimi Büyük Harfe Çevir<br></td>
+<td>Ctrl-X, Ctrl-U</td>
+<td></td>
+</tr>
+<tr>
+<td>Seçimi Küçük Harfe Çevir<br></td>
+<td>Ctrl-X, Ctrl-L</td>
+<td></td>
+</tr>
+<tr>
+<th colspan="3" style="background-color: #FF8000">Macrolar</th>
+</tr>
+<tr>
+<td>Kaydetmeye Başla<br></td>
+<td>Ctrl-X, (</td>
+<td></td>
+</tr>
+<tr>
+<td>Kaydı Durdur<br></td>
+<td>Ctrl-X, )</td>
+<td></td>
+</tr>
+<tr>
+<td>Macroyu yürüt<br></td>
+<td>Ctrl-X, E</td>
+</tr>
+</tbody>
+</table>
  
 
 
