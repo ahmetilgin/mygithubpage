@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>ahmetilgin</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>valkrie</h1>
+        <h2></h2>
+
+        <section id="Ögrenilenler">
+  
+        </section>
+      </div>
+    </header>
+    <center>
+  <div id="content">
+<h2>
+R Programlama Kullanışlı Fonksiyonların Listesi
+</h2>
+
+
+<hr align = "left">
+
+    <h1><a name="Genel Amaçlı">1-Genel Amaçlı Fonksiyonlar</a></h1>
+
+    <div align="left" class="screen"><pre class="highlight">
+R Programlama da çok kullanılan fonksiyonların ne işe yaradıklarını yazmaya çalıştım umarım işe yarar.
+builtins() # Çalıştırılabilecek tüm fonksiyonları listele
+options()  # Print fonksiyonu kaç basamak gösterecek gibi şeyler için 
+?NA        # NA karakteri hakkında bilgi
+abs(x)     # X in mutlak değeri
+append()   # Vectore yada diziye ekleme yapmak için> x<-c(1:10) append(x,2) [1]  1  2  3  4  5  6  7  8  9 10  2 gibi
+c(x)       # Dizi vs vs oluşturmak için bi sürü şeyi var bunun  
+cat(x)     # Birden çok şeyi yazdırmak için örnek cat(x,y,z,"asdasd")
+cbind()    # appendin yanına yapıştırmış hali gibi mesela iki diziyi yan yana getirebiliyorsunuz 2 vectoru
+diff(x)    # vectorun elemanları arasında ki farkı yazıyor mesela Örnek:  diff(c(5,2,3,56,7,1)) Çıktı: [1]  -3   1  53 -49  -6
+gl()       # ****
+grep()     # Eşleşmeyi buluyor linux da greple aynı mantık.
+identical()  # 2 Nesnede gerçekten birbirine eşit mi diye bakıyor.
+jitter()     # Küçük kayıplı gürültülü vectorü veriyor.Vektörün gürültülü hali .
+julian()     # Julian tarihini döndürüyor
+length(x)    # Vectorun uzunluğunu 
+ls()         # Oluşturduğumuz nesnelerin listesini veriyor
+mat.or.vec() # Matrix veya vector oluşturmamızı sağlıyor
+paste(x)     # paste bildiğimiz yapıştırma işlemi diziler arası yapılabiliyor çok ilginç kullanımı var kullanması keyifli.
+range(x)     # Dizide ki maksimum ve minimum değerleri döndürüyor.
+rep(1,5)     # 2.arguman kadar 1.yi tekrar tekrar yazıyor
+rev(x)       # listeyi tersten yazıyor.
+seq(1,10,0.4)  #  1 den 10 a kadar 0.4 er artarak dizi oluştur. demek 
+sequence()     # sequence(c(3, 2))  veya.1:3 ve 1:2. #> [1] 1 2 3 1 2 aynı
+sign(x)        # sayının işaretine göre mesela "+"" ise 1 "-"ise -1 0 ise 0 döndürüyor işareti tespit etmek amacı yani.
+sort(x)        # Vectoru sıralıyor.
+order(x)       # Sıralı listenin indexlerini sırasına göre döndürüyor.
+tolower(),toupper()  # String in harflerini küçük harfe yada büyük harfe çevirme
+unique(x)      # Tekrar edenleri silip benzersiz olanları yazıyor.
+system("cmd")  # İşletim sisteminin terminalinde komut girmeyi sağlıyor.***
+vector()       # Vector oluşturmak için boyutunu falan belirleyebiliyorsunuz.
+
+formatC(x)     # **
+floor(x), ceiling(x), round(x), signif(x), trunc(x)   #**
+
+Sys.getenv(x)  # ***
+Sys.putenv(x)  # ***
+Sys.time()     # Saati yazıyor.
+Sys.Date()     # Tarihi yazıyor.
+getwd()        # Çalışılan klasöre dönüyor.
+setwd()        # Hangi klasörde çalışacağını belirlemek için
+?files         # Dosya işlemleri için bi sürü detayı var.
+list.files()   # Verilen konumdaki tüm dosyaları gösteriyor.
+file.info()    # Dosya hakkında bilgi veriyor.
+</pre></div>
+
+    <h1><a name="maths">2-Matematiksel Hesaplamalarda kullanılan Fonksiyonlar</a></h1>
+    <div align="left"class="screen"><pre class="highlight">log(x),logb(),log10(),log2(),exp(),expm1(),log1p(),sqrt()   # Fairly obvious
+cos(),sin(),tan(),acos(),asin(),atan(),atan2()       # Çok kullanılanlar
+cosh(),sinh(),tanh(),acosh(),asinh(),atanh()         # Hiperbolik fonksiyonlar
+union(),intersect(),setdiff(),setequal()             # Eşitleme işlemleri
++,-,*,/,^,%%,%/%                                     # Aritmetik işlemler mod %%  x %/ % 5 de sonucu yuvarlıyıp yazıyor.
+&lt;,&gt;,&lt;=,&gt;=,==,!=                                      # Mantıksak işlemler eşit mi değil mi vs vs
+eigen()      # Özdeğer özvektör hesabı.
+deriv()      # türev alıyor.
+integrate()  # İntegral almak için
+
+sqrt(),sum() # karekök ve toplama 
+?Control     # if for while hakkında bilgi almak için
+?Extract     # **
+?Logic       # Mantıksal operatorler hakkında bilgi
+?Mod         # complex aritmetik işlemler için
+?Paren       # Parentezler hakkında bilgi
+?regex       # Düzenli ifadeler hakkında bilgi
+?Syntax      # Syntaxı hakkında bilgi
+?Special     # Özel fonksiyonlar hakkında bilgi
+</pre></div>
+
+    
+    <h1><a name="graphical">3-Çizimlerde grafiklerde kullanılan fonksiyonlar</a></h1>
+    <div align="left" class="screen"><pre class="highlight">help(package=graphics) # List all graphics functions
+
+plot()                # R nesnelerini çiziyor
+par()                 # **
+curve(5*x^3,add=T)    # Eğri çizmek için
+points(x,y)           # X,Y koordinatına nokta koy
+arrows()              # Ok çiziyor ama hata verdi bende.
+abline()              # Grafiğin sonuna kadar çizgi çiziyor.
+lines()               # iki nokta arasına çizgi çiziyor
+segments()            # bu da noktaları birleştiriyor
+hist(x)               # Histogram grafiği çizdirmek için
+pairs()               # Matris şeklinde çiz
+matplot()             # Matris çiz.
+?device               # Grafik sürücüler hakkında bilgi
+postscript()          # Postscript dosyasına çiz
+pdf()                 # pdf dosyasına çiz
+png()                 # Png türünde çiz
+jpeg()                # JEPG türünde 
+X11()                 # x window a çiz
+persp()               # perspektifi değiştir
+contour()             # Contour çiz
+image()               # Resim çiz
+</pre></div>
+
+    <h1><a name="fitting">4-Regresyon fitting soptimizasyonda kullanılan fonksiyonlar </a></h1>
+    <div align="left" class="screen"><pre class="highlight">lm   # Fit liner model
+glm   # Fit generalised linear model
+nls   # non-linear (weighted) least-squares fitting
+lqs   # "library(MASS)" resistant regression
+
+optim   # general-purpose optimisation
+optimize  # 1-dimensional optimisation
+constrOptim # Constrained optimisation
+nlm   # Non-linear minimisation
+nlminb    # More robust (non-)constrained non-linear minimisation
+</pre></div>
+
+    <h1><a name="stats">5-İstatistiksel fonksiyonlar</a></h1>
+    <div align="left" class="screen"><pre class="highlight">help(package=stats)   # List all stats functions
+
+?Chisquare            # Help on chi-squared distribution functions
+?Poisson              # Help on Poisson distribution functions
+help(package=survival) # Survival analysis
+
+cor.test()            # Perform correlation test
+cumsum(); cumprod(); cummin(); cummax()   # Cumuluative functions for vectors
+density(x)            # Compute kernel density estimates
+ks.test()             # Performs one or two sample Kolmogorov-Smirnov tests
+loess(), lowess()     # Scatter plot smoothing
+mad()                 # Calculate median absolute deviation
+mean(x), weighted.mean(x), median(x), min(x), max(x), quantile(x)
+rnorm(), runif()  # Generate random data with Gaussian/uniform distribution
+splinefun()           # Perform spline interpolation
+smooth.spline()       # Fits a cubic smoothing spline
+sd()                  # Standart sapmayı hesaplama
+summary(x)            # Ortalamayı maximum değeri minimum değeri vs vs yazıyor.
+t.test()              # Student's t-test
+var()                 # Varyansı hesaplama
+sample()              # Random samples &amp; permutations
+ecdf()                # Empirical Cumulative Distribution Function
+qqplot()              # Örnekleme yapmak için
+
+</pre></div>
+
+    <hr>
+    
+</div>
+<br></br>
+
+
+    </center>
+    </div>
+
+    
+  </body>
+</html>
+  ""
