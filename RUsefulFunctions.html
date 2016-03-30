@@ -146,7 +146,8 @@ nlminb    # More robust (non-)constrained non-linear minimisation
 </pre></div>
 
     <h1><a name="stats">5-İstatistiksel fonksiyonlar</a></h1>
-    <div align="left" class="screen"><pre class="highlight">help(package=stats)   # List all stats functions
+    <div align="left" class="screen"><pre class="highlight">
+help(package=stats)   # List all stats functions
 
 ?Chisquare            # Help on chi-squared distribution functions
 ?Poisson              # Help on Poisson distribution functions
@@ -169,7 +170,13 @@ var()                 # Varyansı hesaplama
 sample()              # Random samples &amp; permutations
 ecdf()                # Empirical Cumulative Distribution Function
 qqplot()              # Örnekleme yapmak için
-
+    <h1><a name="stats">5-String İşlemleri</a></h1>
+    <div align="left" class="screen"><pre class="highlight">
+substr(x = states, start = 1, stop = 4)   ## x de ki string 4 karaktere kısaltılıyor Alt string
+abbreviate(states, minlength = 5)         ## Aynı şeyi yapıyor
+states[which(state_chars == max(state_chars))] ## En uzun kelimeyi yada cümleyi seçmek için. Which hangi eleman index döndürüyor geriye
+grep(pattern = "k", x = states, value = TRUE) ## states de ki k harfi olanları verir.
+chartr("aei", "#!?", crazy) ## replace işlemi crazy de #!? olan yerler a bulunan yere # e bulunan yere ! i yerine ?
 </pre></div>
 
     <hr>
