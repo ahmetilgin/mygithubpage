@@ -177,7 +177,9 @@ abbreviate(states, minlength = 5)         ## Aynı şeyi yapıyor
 states[which(state_chars == max(state_chars))] ## En uzun kelimeyi yada cümleyi seçmek için. Which hangi eleman index döndürüyor geriye
 grep(pattern = "k", x = states, value = TRUE) ## states de ki k harfi olanları verir.
 chartr("aei", "#!?", crazy) ## replace işlemi crazy de #!? olan yerler a bulunan yere # e bulunan yere ! i yerine ?
-pos = regexpr(q, iller)  ## q patterini illerde buluyor ve onun indexinin olduğu yere uzunluğunu yazıyor
+pos = regexpr(q, iller)  ## q patterini illerde buluyor ve onun indexinin olduğu yere uzunluğunu yazıyor 
+pos = gregexpr('pattern', x) #Tüm stringte uyuşan bölgeleri geri döndürüyor
+
 </pre></div>
 
     <hr>
